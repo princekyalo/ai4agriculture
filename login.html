@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <style>
+    .form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 5vh; /* vh stands for viewport height */
+      height: 500px;
+      border-radius: 20%;
+    }
+
+   form {
+     width: 50%; /* adjust this value to control the form's width */
+     background-color: rgb(109, 100, 100);
+     padding-left: 15%;
+     
+    }
+    .home{
+      font-size: medium;
+    }
+    div{
+       display: flex;
+      align-self: center;
+      align-content: center;
+    }
+    .google{
+      width: 5%;
+    }
+    .facebook{
+      float:right;
+      padding-left: 3%;
+      width: 5%;
+    }
+    input{
+      width:70%;
+      height:30px;
+    }
+    body{
+        background-color: rgb(155, 155, 165);
+    }
+    .title{
+      font-size: large;
+      text-align:center;
+    }
+    .home{
+      font-size:large;
+      padding-left: 5%;
+      border-radius: 15%;
+      backface-visibility: hidden;
+    }
+    .nav_bar{
+      background-color: rgb(155, 155, 165);
+    }
+  </style>
+  <script>
+    function submit(){
+	  var form=FormData; 
+	  
+    }
+
+
+    // var wsHost = "ws://localhost:8080";
+    // var ws = new WebSocket(wsHost);
+    // var value = "hello world";
+    // https://riptutorial.com/ 569
+    // //onmessage : Event Listener - Triggered when we receive message form server
+    // ws.onmessage = function(message) {
+    // if (message === value) {
+    // console.log("The echo host sent the correct message.");
+    // } else {
+    // console.log("Expected: " + value);
+    // console.log("Received: " + message);
+    // }
+    // };
+    // //onopen : Event Listener - event is triggered when websockets readyState changes to open
+    // //which means now we are ready to send and receives messages from server
+    // ws.onopen = function() {
+    // //send is used to send the message to server
+    // ws.send(value);
+    // };
+
+  </script>
+</head>
+<body>
+  <div class="title">science fair project</div>
+  <div class="nav-bar"><a href="index.html"><button class="home">home</button></a></div>
+  
+  <!-- <div><a href="forgot_password.html">forgot password</a></div>
+    <div>login with</div>
+	<div>
+    <img src="google-logo.png" class="google">
+    <image src="facebook-logo.png" class="facebook"></image>
+   -->
+<div class="form-container">
+  <form id="form" action="index.html">
+    <div>
+      <label>Enter email address</label>
+    </div>
+    <div>
+      <input placeholder="email address" id="email"> 
+    </div>
+    <div>
+      <label>account number</label>
+    </div>
+    <div>
+      <input placeholder="account number" type="number" id="account">
+    </div>
+    <div>
+      <label>enter password</label>
+    </div>
+    <div>
+      <input placeholder="password" type="password" id="password">
+    </div>
+    
+    <div>
+      <label>select your region</label>
+    </div>
+    <div>
+      <select>
+        <option>Central Kenya</option>
+        <option>Eastern Kenya</option>
+        <option>Western Kenya</option>
+        <option>Nyanza</option>
+        <option>Coast</option>
+        <option>Northern Kenya</option>
+      </select>
+    </div>
+    <div>
+    <button onclick="submit();" style="text-align: center;width:50px;" type="submit">submit</button>
+    </div>
+  </form>
+  
+</div>
+
+</body>
+</html>
